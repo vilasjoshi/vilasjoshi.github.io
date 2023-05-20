@@ -1,130 +1,213 @@
-
-body{
-  line-height: 1.5;
-  background-color: #233232;
-  color: #f3e5f5;
-  font-family: cursive;
-  text-transform: uppercase;
-}
-.animation{
-
-  animation-name: stretch;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes stretch {
-
-  0% {
-    letter-spacing: 3px;
-  }
-   50% {
-    letter-spacing: 10px;
-  }
-  100% {
-    letter-spacing: 3px;
-  }
-}
-
-*{
+/* Global styles */
+html,
+body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  outline:none;
-  text-decoration: none;
-  box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif;
 }
-::before, ::after{
-  box-sizing: border-box;
-}
-.container{
-  position:  relative;
-  /* background-image: url("https://katiejayne.co.uk/wp-content/uploads/2020/05/Canva-Concept-of-education-or-back-to-school-on-green-background-scaled.jpg"); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 
+#container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  color: #333;
 }
-.container-profile{
-  /* border: 1px solid black; */
-  padding: 10px;
-  width: 100%;
-  height:  100vh;
 
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  background-image: url("https://c.pxhere.com/photos/1f/ac/sunset_dawn_sunrise_dusk_mountain-19330.jpg!d");
+  
+  /* Light mode styles */
+  body.light {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Dark mode styles */
+  body.dark {
+    background-color: #222;
+    color: #f9f9f9;
+  }
+  
+
+  /* Header styles */
+header {
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+  }
+  
+  nav h1 {
+    color: inherit;
+  }
+  
+  nav button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  
+  /* Hero section styles */
+  #hero {
+    padding: 29px;
+    text-align: center;
+    background-color: inherit;
+  }
+  
+  #hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: inherit;
+  }
+  
+  #hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #888;
+  }
+  
+  /* Skills section styles */
+#skills {
+    padding: 50px;
+    background-color: inherit;
+  }
+  
+  #skills ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #skills li {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 10px;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #skills li:hover {
+    background-color: #eaeaea;
+  }
+  
+  /* Dark mode styles for skills section */
+  body.dark #skills li {
+    background-color: #333;
+    color: #f9f9f9;
+  }
+  
+  body.dark #skills li:hover {
+    background-color: #444;
+  }
+  
+  
+  /* Projects section styles */
+  #projects {
+    padding: 50px;
+    background-color: inherit;
+  }
+  
+  .project {
+    margin-bottom: 20px;
+  }
+  
+  .project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: inherit;
+  }
+  /* Education section styles */
+#education {
+  padding: 50px;
+  background-color: inherit;
 }
-.profile-img{
-  /* border: 1px solid black; */
-  padding: 10px;
+
+#education h2 {
+  color: inherit;
+}
+
+.education-item {
+  margin-bottom: 20px;
+}
+
+.education-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: inherit;
+}
+
+.education-item p {
+  color: #888;
+}
+
+/* Dark mode styles for education section */
+body.dark #education {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+body.dark #education h2,
+body.dark .education-item h3 {
+  color: inherit;
+}
+
+body.dark .education-item p {
+  color: #888;
+}
+/* Social media section styles */
+#social-media {
+  padding: 50px;
+  background-color: inherit;
+}
+
+#social-media h2 {
+  color: inherit;
+}
+
+.social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #233232; */
-  margin-top: 10px;
-
-
-}
-.intro{
-
-  display: flex;
-  justify-content:center;
-  align-items:center;
-  margin-top: 10px;
-
 }
 
-.dark-text-color-bold{
-  color: #000000;
-  font-weight: bold;
-
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 24px;
 }
 
-.profile-img img{
-  border-radius: 50%;
-  /* border: 5px solid #376161; */
-  max-width: 300px;
-  max-height: 300px;
+/* Dark mode styles for social media section */
+body.dark #social-media {
+  /* background-color: #333; */
+  color: #f9f9f9;
 }
 
-.container-edu{
-  background-image: url("https://katiejayne.co.uk/wp-content/uploads/2020/05/Canva-Concept-of-education-or-back-to-school-on-green-background-scaled.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  display:  flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  /* background-color: #00adad; */
-}
-.container-experience{
-  background-image : url("https://c.pxhere.com/photos/a0/97/yellow_background_pencil_designer_work-149186.jpg!d");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  display:  flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  /* background-color: #00d4d4; */
-
+body.dark #social-media h2 {
+  color: inherit;
 }
 
-
-.hamburger
-{
-  line-height: 20px;
-  font-size: 20px;
-  padding:20px;
+body.dark .social-icons a {
+  color: inherit;
 }
 
-
-.hamburger:hover{
-  cursor: pointer;
-  font-size: 25px;
-  transition: 0.5s;
-}
+  
+  /* Footer styles */
+  footer {
+    background-color: #222;
+    padding: 20px;
+    color: #f9f9f9;
+    text-align: center;
+  }
+  
