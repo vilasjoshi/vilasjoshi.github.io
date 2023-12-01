@@ -4,134 +4,126 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 #container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  max-height: 100vh;
   background-color: #f9f9f9;
   color: #333;
 }
 
-  
-  /* Light mode styles */
-  body.light {
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  /* Dark mode styles */
-  body.dark {
-    background-color: #222;
-    color: #f9f9f9;
-  }
-  
+/* Light mode styles */
+body.light {
+  background-color: #f9f9f9;
+  color: #333;
+}
 
-  /* Header styles */
+/* Dark mode styles */
+body.dark {
+  background-color: #222;
+  color: #f9f9f9;
+}
+
+/* Header styles */
 header {
-    padding: 20px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: inherit;
-  }
-  
-  nav h1 {
-    color: inherit;
-  }
-  
-  nav button {
-    background-color: inherit;
-    color: inherit;
-    border: none;
-    cursor: pointer;
-  }
-  
+  padding: 0 20px 0 20px;
+}
 
-  
-  /* Hero section styles */
-  #hero {
-    padding: 29px;
-    text-align: center;
-    background-color: inherit;
-  }
-  
-  #hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: inherit;
-  }
-  
-  #hero h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: #888;
-  }
-  
-  /* Skills section styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  color: inherit;
+}
+
+nav button {
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hero section styles */
+#hero {
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  color: inherit;
+}
+
+#hero h2 {
+  font-size: 1.5rem;
+  color: #888;
+}
+
+/* Skills section styles */
 #skills {
-    padding: 50px;
-    background-color: inherit;
-  }
-  
-  #skills ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  #skills li {
-    background-color: #f9f9f9;
-    border-radius: 4px;
-    padding: 10px 20px;
-    margin: 10px;
-    color: #333;
-    font-weight: bold;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  #skills li:hover {
-    background-color: #eaeaea;
-  }
-  
-  /* Dark mode styles for skills section */
-  body.dark #skills li {
-    background-color: #333;
-    color: #f9f9f9;
-  }
-  
-  body.dark #skills li:hover {
-    background-color: #444;
-  }
-  
-  
-  /* Projects section styles */
-  #projects {
-    padding: 50px;
-    background-color: inherit;
-  }
-  
-  .project {
-    margin-bottom: 20px;
-  }
-  
-  .project h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: inherit;
-  }
-  /* Education section styles */
+  padding: 20px;
+}
+
+#skills ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#skills li {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 10px;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#skills li:hover {
+  background-color: #eaeaea;
+}
+
+/* Dark mode styles for skills section */
+body.dark #skills li {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+body.dark #skills li:hover {
+  background-color: #444;
+}
+
+/* Projects section styles */
+#projects {
+  padding: 50px;
+  background-color: inherit;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: inherit;
+}
+/* Education section styles */
 #education {
   padding: 50px;
   background-color: inherit;
+  height: 21.2vh;
+
 }
 
 #education h2 {
@@ -202,12 +194,13 @@ body.dark .social-icons a {
   color: inherit;
 }
 
-  
-  /* Footer styles */
-  footer {
-    background-color: #222;
-    padding: 20px;
-    color: #f9f9f9;
-    text-align: center;
-  }
-  
+/* Footer styles */
+footer {
+  background-color: #222;
+  padding: 20px;
+  color: #f9f9f9;
+  text-align: center;
+}
+footer p {
+
+}
