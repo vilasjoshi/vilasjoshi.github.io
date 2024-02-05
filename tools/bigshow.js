@@ -10,7 +10,7 @@ const ShowBig = () => {
     value: inputText,
     onChange: (e) => setInputText(e.target.value)
   }),
-  React.createElement("h1", null, inputText)
+  React.createElement("h1", {style: { fontSize: "256px" }}, inputText)
 );
 };
 
